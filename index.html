@@ -4,21 +4,23 @@
         <meta charset="utf-8">
         <title>Navigation and Links</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TO DO: ADD YOUR NAME TO THE AUTHOR TAG HERE -->
-        <meta name="author" content="">
+        <meta name="author" content="Renee Reynolds">
         <meta name="description" content="Learn about the different types of anchor tags, or links, that you can use when building a page for the web. Make it possible to navigate between pages, send an email, call a number, and more with anchor tags!">
         <link rel="stylesheet" href="styles.css">
     </head>
+
     <body>
-        <!-- ADD SKIP LINK HERE -->
-        Skip to Main Content
+        <a href="#main-content" id="skip">Skip to Main Content</a>
         <header>
             <h1>Navigation and Links</h1>
 
-            <!-- TO DO: CREATE THE NAVIGATION FOR THE SITE HERE -->
-            Home
-            About
-            Contact
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
             
 
@@ -29,7 +31,7 @@
                 <h2>Link Best Practices</h2>
                 <p>As with all of the code on your page, how you write it can affect whether ot not your page is usable and accessible. There are some basic things to keep in mind with links.</p>
                 <ul>
-                    <li>The text inside of your link should tell the user what will happen when they click on it
+                    <li>The text inside of your link should tell the user what will happen when they click on it.
                         <ul>
                             <li>Link text should <strong>never</strong> say something like "click here"</li>
                             <li>Bad: <a href="#">Click here</a> to submit our form</li>
@@ -50,20 +52,20 @@
                 <h2>About Links</h2>
                 <p>You will be learning about and creating six types of hyperlinks:</p> 
 
-                <!-- TO DO: CREATE FRAGMENT LINKS HERE TO THESE TOPIC SECTIONS ON THE PAGE -->
+                
                 <ul id="link-types">
-                    <li>absolute</li> <!-- link this to the absolute links section -->
-                    <li>relative</li> <!-- link this to the relative links section -->
-                    <li>fragment</li> <!-- link this to the fragment links section -->
-                    <li>email</li> <!-- link this to the email links section -->
-                    <li>telephone</li> <!-- link this to the telephone links section -->
-                    <li>>relative with fragment</li> <!-- link this to the relative with fragment links section -->
+                    <li><a href="#abs">absolute</a></li> <!-- link this to the absolute links section -->
+                    <li><a href="#rel">relative</a></li> <!-- link this to the relative links section -->
+                    <li><a href="#frag">fragment</a></li> <!-- link this to the fragment links section -->
+                    <li><a href="#email">email</a></li> <!-- link this to the email links section -->
+                    <li><a href="#tel">telephone</a></li> <!-- link this to the telephone links section -->
+                    <li><a href="#rel-frag">relative with fragment</a></li> <!-- link this to the relative with fragment links section -->
                 </ul>
 
-                <!-- TO DO: ADD AN ABSOLUTE LINK TO THE ASU WEBSITE FROM THE TEXT ASU.EDU BELOW, AND INCLUDE THE ATTRIBUTE THAT WILL MAKE THIS LINK OPEN IN A NEW TAB -->
+
                 <section id="abs">
                     <h3>Absolute Hyperlinks</h3>
-                    <p>Absolute hyperlinks are used when links are needed to another website. You would use an absolute link if you wanted to code a link on your website to asu.edu.</p>
+                    <p>Absolute hyperlinks are used when links are needed to another website. You would use an absolute link if you wanted to code a link on your website to <a href="https://www.asu.edu/" target="_blank">asu.edu</a></p>
                 </section>
 
                 <section id="rel">
